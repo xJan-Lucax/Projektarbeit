@@ -1,0 +1,310 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "STK 600 Huckepack Platine SPS30"
+Date "2021-11-20"
+Rev "1.0"
+Comp "FH Bielefeld"
+Comment1 "Philipp Husemann"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even PORT_A1
+U 1 1 618D8315
+P 3150 5750
+F 0 "PORT_A1" H 3200 6167 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even_MountingPin" H 3200 6076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 3150 5750 50  0001 C CNN
+F 3 "~" H 3150 5750 50  0001 C CNN
+	1    3150 5750
+	1    0    0    -1  
+$EndComp
+Text Notes 2500 5600 0    50   ~ 0
+Pin1: SCL\n
+Wire Wire Line
+	2950 5100 2950 5550
+Wire Wire Line
+	4700 5000 4700 6200
+Wire Wire Line
+	2750 6200 2750 5950
+Wire Wire Line
+	2750 5950 2950 5950
+NoConn ~ 2950 5650
+NoConn ~ 2950 5750
+NoConn ~ 2950 5850
+NoConn ~ 3450 5850
+NoConn ~ 3450 5750
+NoConn ~ 3450 5650
+Wire Wire Line
+	3450 5550 4000 5550
+Wire Wire Line
+	2750 6200 4700 6200
+Wire Wire Line
+	3450 5950 3850 5950
+Text Label 3600 6200 0    50   ~ 0
+GND
+Text Label 3650 5950 0    50   ~ 0
+VCC
+Text Label 4000 5550 0    50   ~ 0
+SDA
+Text Label 4000 5100 0    50   ~ 0
+SCL
+$Comp
+L eec:MAX1724EZK50+T U1
+U 1 1 6198ECCD
+P 5000 4000
+F 0 "U1" H 5550 4265 50  0000 C CNN
+F 1 "MAX1724EZK50+T" H 5550 4174 50  0000 C CNN
+F 2 "eec:Maxim-MAX1724EZK50+T-Level_A" H 5000 4400 50  0001 L CNN
+F 3 "http://datasheets.maxim-ic.com/en/ds/MAX1722-MAX1724.pdf" H 5000 4500 50  0001 L CNN
+F 4 "MO-193*" H 5000 4600 50  0001 L CNN "Code  JEDEC"
+F 5 "SC-74" H 5000 4700 50  0001 L CNN "Code  JEITA"
+F 6 "Manufacturer URL" H 5000 4800 50  0001 L CNN "Component Link 1 Description"
+F 7 "http://www.maxim-ic.com" H 5000 4900 50  0001 L CNN "Component Link 1 URL"
+F 8 "Package Specification" H 5000 5000 50  0001 L CNN "Component Link 3 Description"
+F 9 "http://pdfserv.maxim-ic.com/package_dwgs/21-0113.PDF" H 5000 5100 50  0001 L CNN "Component Link 3 URL"
+F 10 "Rev 0, Jul-2001" H 5000 5200 50  0001 L CNN "Datasheet Version"
+F 11 "5-Pin Thin Small-Outline Transistor, 2.9 x 1.6 mm Body, 0.95 mm Pitch, 2.8 mm Lead Span, SOT-23, Pb-Free" H 5000 5300 50  0001 L CNN "Package Description"
+F 12 "revD, 2010" H 5000 5400 50  0001 L CNN "Package Version"
+F 13 "IC" H 5000 5500 50  0001 L CNN "category"
+F 14 "1484189" H 5000 5600 50  0001 L CNN "ciiva ids"
+F 15 "fbef99b7d7b60d8f" H 5000 5700 50  0001 L CNN "library id"
+F 16 "Maxim" H 5000 5800 50  0001 L CNN "manufacturer"
+F 17 "Z5+1" H 5000 5900 50  0001 L CNN "package"
+F 18 "1332920222" H 5000 6000 50  0001 L CNN "release date"
+F 19 "127C1FA8-8A28-4AE5-B9F5-68D43194AA62" H 5000 6100 50  0001 L CNN "vault revision"
+F 20 "yes" H 5000 6200 50  0001 L CNN "imported"
+	1    5000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 6199158E
+P 5750 3300
+F 0 "J1" H 5858 3681 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 5858 3590 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5750 3300 50  0001 C CNN
+F 3 "~" H 5750 3300 50  0001 C CNN
+	1    5750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 61991E46
+P 4700 4200
+F 0 "L1" H 4753 4246 50  0000 L CNN
+F 1 "L" H 4753 4155 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" H 4700 4200 50  0001 C CNN
+F 3 "~" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4000 4700 4000
+Wire Wire Line
+	4700 4000 4700 4050
+Wire Wire Line
+	5100 4400 4700 4400
+Wire Wire Line
+	4700 4400 4700 4350
+Wire Wire Line
+	4700 5000 6000 5000
+Wire Wire Line
+	6000 5000 6000 4500
+Wire Wire Line
+	4500 4000 4650 4000
+Wire Wire Line
+	4500 4000 4500 5950
+Connection ~ 4700 4000
+$Comp
+L Device:C C1
+U 1 1 619932B1
+P 4650 3850
+F 0 "C1" H 4765 3896 50  0000 L CNN
+F 1 "C" H 4765 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4688 3700 50  0001 C CNN
+F 3 "~" H 4650 3850 50  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 4000
+Wire Wire Line
+	4650 4000 4700 4000
+$Comp
+L Device:C C2
+U 1 1 61994074
+P 6250 4150
+F 0 "C2" H 6365 4196 50  0000 L CNN
+F 1 "C" H 6365 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6288 4000 50  0001 C CNN
+F 3 "~" H 6250 4150 50  0001 C CNN
+	1    6250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4000 6100 4000
+Wire Wire Line
+	6250 4300 6250 4400
+Wire Wire Line
+	6250 4400 6000 4400
+Connection ~ 6000 4400
+Wire Wire Line
+	6500 3700 6500 4500
+Wire Wire Line
+	6500 4500 6000 4500
+Connection ~ 6000 4500
+Wire Wire Line
+	6000 4500 6000 4400
+Wire Wire Line
+	5100 4200 5100 4000
+Connection ~ 5100 4000
+Wire Wire Line
+	6100 3500 6100 4000
+Connection ~ 6100 4000
+Wire Wire Line
+	6100 4000 6250 4000
+Connection ~ 6250 4300
+Wire Wire Line
+	6500 3500 6500 3100
+Wire Wire Line
+	6500 3100 5950 3100
+Wire Wire Line
+	6600 3600 5950 3600
+Wire Wire Line
+	5950 3600 5950 3500
+Wire Wire Line
+	6600 4300 6250 4300
+Wire Wire Line
+	4650 3700 6500 3700
+Wire Wire Line
+	4350 2700 4350 5550
+Wire Wire Line
+	6250 2700 6250 3200
+Wire Wire Line
+	6250 3200 5950 3200
+Wire Wire Line
+	6250 2700 4350 2700
+Wire Wire Line
+	4150 2650 4150 5100
+Wire Wire Line
+	5950 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 2650
+Wire Wire Line
+	6400 2650 4150 2650
+Wire Wire Line
+	5950 3400 5950 3500
+Connection ~ 5950 3500
+Wire Wire Line
+	6500 3500 6100 3500
+$Comp
+L eec1:B5B-ZR-SM4-TFLFSN J2
+U 1 1 619B6621
+P 8800 3450
+F 0 "J2" H 8408 3815 50  0000 C CNN
+F 1 "B5B-ZR-SM4-TFLFSN" H 8408 3724 50  0000 C CNN
+F 2 "eec4:JST-B5B-ZR-SM4-TF" H 8800 3950 50  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 8800 4050 50  0001 L CNN
+F 4 "No" H 8800 4150 50  0001 L CNN "automotive"
+F 5 "Conn" H 8800 4250 50  0001 L CNN "category"
+F 6 "Tin" H 8800 4350 50  0001 L CNN "contact material"
+F 7 "1A" H 8800 4450 50  0001 L CNN "current rating"
+F 8 "Connectors" H 8800 4550 50  0001 L CNN "device class L1"
+F 9 "Board to Board Connectors" H 8800 4650 50  0001 L CNN "device class L2"
+F 10 "unset" H 8800 4750 50  0001 L CNN "device class L3"
+F 11 "CONN HEADER SMD 5POS 1.5MM" H 8800 4850 50  0001 L CNN "digikey description"
+F 12 "455-1684-1-ND" H 8800 4950 50  0001 L CNN "digikey part number"
+F 13 "5mm" H 8800 5050 50  0001 L CNN "height"
+F 14 "yes" H 8800 5150 50  0001 L CNN "is connector"
+F 15 "yes" H 8800 5250 50  0001 L CNN "is male"
+F 16 "Yes" H 8800 5350 50  0001 L CNN "lead free"
+F 17 "5d51840cae7a65c4" H 8800 5450 50  0001 L CNN "library id"
+F 18 "JST" H 8800 5550 50  0001 L CNN "manufacturer"
+F 19 "5" H 8800 5650 50  0001 L CNN "number of contacts"
+F 20 "1" H 8800 5750 50  0001 L CNN "number of rows"
+F 21 "HDR5" H 8800 5850 50  0001 L CNN "package"
+F 22 "1.5mm" H 8800 5950 50  0001 L CNN "pitch"
+F 23 "Yes" H 8800 6050 50  0001 L CNN "rohs"
+F 24 "+85°C" H 8800 6150 50  0001 L CNN "temperature range high"
+F 25 "-25°C" H 8800 6250 50  0001 L CNN "temperature range low"
+F 26 "50V" H 8800 6350 50  0001 L CNN "voltage rating"
+	1    8800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3450 8700 3100
+Wire Wire Line
+	8700 3100 6500 3100
+Connection ~ 6500 3100
+Wire Wire Line
+	8700 3650 7000 3650
+Wire Wire Line
+	7000 3650 7000 3200
+Wire Wire Line
+	7000 3200 6250 3200
+Connection ~ 6250 3200
+Wire Wire Line
+	8700 3850 7900 3850
+Wire Wire Line
+	7900 3850 7900 3300
+Wire Wire Line
+	7900 3300 6400 3300
+Connection ~ 6400 3300
+Wire Wire Line
+	8700 4050 8700 4250
+Wire Wire Line
+	8700 4050 6600 4050
+Wire Wire Line
+	6600 3600 6600 4050
+Connection ~ 8700 4050
+Connection ~ 6600 4050
+Wire Wire Line
+	6600 4050 6600 4300
+NoConn ~ 8700 4450
+NoConn ~ 8700 4650
+$Comp
+L Device:R R2
+U 1 1 619DB0E1
+P 4000 5700
+F 0 "R2" H 4070 5746 50  0000 L CNN
+F 1 "R" H 4070 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3930 5700 50  0001 C CNN
+F 3 "~" H 4000 5700 50  0001 C CNN
+	1    4000 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 5550
+Wire Wire Line
+	4000 5550 4350 5550
+Wire Wire Line
+	2950 5100 3850 5100
+$Comp
+L Device:R R1
+U 1 1 619DD5FB
+P 3850 5250
+F 0 "R1" H 3920 5296 50  0000 L CNN
+F 1 "R" H 3920 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3780 5250 50  0001 C CNN
+F 3 "~" H 3850 5250 50  0001 C CNN
+	1    3850 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 5100
+Wire Wire Line
+	3850 5100 4150 5100
+Wire Wire Line
+	3850 5400 3850 5950
+Connection ~ 3850 5950
+Wire Wire Line
+	3850 5950 4000 5950
+Wire Wire Line
+	4000 5850 4000 5950
+Connection ~ 4000 5950
+Wire Wire Line
+	4000 5950 4500 5950
+$EndSCHEMATC

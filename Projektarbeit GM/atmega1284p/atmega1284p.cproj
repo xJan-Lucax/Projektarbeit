@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATmega1284P</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>atmega1284p</AssemblyName>
+    <Name>atmega1284p</Name>
+    <RootNamespace>atmega1284p</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.stk600</avrtool>
+    <avrtoolserialnumber>004A8D686F53</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1E9705</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolOptions>
+        <InterfaceProperties>
+        </InterfaceProperties>
+        <InterfaceName>
+        </InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber>
+      </ToolNumber>
+      <ToolName>Simulator</ToolName>
+    </com_atmel_avrdbg_tool_simulator>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <com_atmel_avrdbg_tool_stk600>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>true</JtagEnableExtResetOnStartSession>
+          <JtagInChain>false</JtagInChain>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <JtagSelectedDeviceIndexInChain>0</JtagSelectedDeviceIndexInChain>
+          <JtagDbgClock>0</JtagDbgClock>
+          <JtagDaisyChainDevices>
+          </JtagDaisyChainDevices>
+          <IspClock>125000</IspClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.stk600</ToolType>
+      <ToolNumber>004A8D686F53</ToolNumber>
+      <ToolName>STK600</ToolName>
+    </com_atmel_avrdbg_tool_stk600>
+    <avrtoolinterfaceclock>125000</avrtoolinterfaceclock>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega1284p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega1284p"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega1284p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega1284p"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>False</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=10000000UL</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+            <Value>..</Value>
+            <Value>../spi</Value>
+            <Value>../i2c</Value>
+            <Value>../sensor</Value>
+            <Value>../timer</Value>
+            <Value>../display</Value>
+            <Value>../utils</Value>
+            <Value>../lora</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.general.UseVprintfLibrary>True</avrgcc.linker.general.UseVprintfLibrary>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="display\LCD.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="display\LCD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="display\lcd_lib.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="display\lcd_lib.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="eeprom_driver\eeprom.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="eeprom_driver\eeprom.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2c\i2c_basic.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2c\i2c_basic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2c\i2c_buffer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2c\i2c_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="led_lib.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="led_lib.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\io_utils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\crypto\aes.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\crypto\aes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\crypto\cmac.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\crypto\cmac.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\crypto\lorawan_crypto.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\crypto\lorawan_crypto.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\lorawan_packets.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\lorawan_packets.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\utils.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan-packets\utils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\lorawan.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\rfm95.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lora\rfm95.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="outputs.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="outputs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\bme280.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\co2_output.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\co2_output.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\co2_sensor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\pressure_sens.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\scd30.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\scd30_crc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\scd30_crc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\sensors.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="sensor\sensors.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi_buffer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi_buffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi_error_handler.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi_error_handler.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi_io.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="timer\timer16.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="timer\timer16.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="timer\timer_lib.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="uart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="uart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="utils\utils.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="utils\utils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="utils\util_debug.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="utils\util_debug.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="i2c" />
+    <Folder Include="display" />
+    <Folder Include="lora" />
+    <Folder Include="lora\lorawan-packets" />
+    <Folder Include="lora\lorawan-packets\crypto" />
+    <Folder Include="eeprom_driver" />
+    <Folder Include="utils" />
+    <Folder Include="timer" />
+    <Folder Include="sensor" />
+    <Folder Include="spi" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

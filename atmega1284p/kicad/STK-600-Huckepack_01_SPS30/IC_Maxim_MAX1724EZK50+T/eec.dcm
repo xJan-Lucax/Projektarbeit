@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX1724EZK50+T
+D MAX1724EZK50+T
+F http://datasheets.maxim-ic.com/en/ds/MAX1722-MAX1724.pdf
+$ENDCMP
+# end doc library

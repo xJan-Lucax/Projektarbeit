@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name eec)(type KiCad)(uri ${KIPRJMOD}/IC_Maxim_MAX1724EZK50+T/eec.pretty)(options "")(descr ""))
+  (lib (name eec^1)(type KiCad)(uri ${KIPRJMOD}/Conn_JST_B5B-ZR-SM4-TF/eec.pretty)(options "")(descr ""))
+)

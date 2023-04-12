@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/IC_Maxim_MAX1724EZK50+T/eec.lib)(options "")(descr ""))
+  (lib (name eec1)(type Legacy)(uri ${KIPRJMOD}/Conn_JST_B5B-ZR-SM4-TF/eec1.lib)(options "")(descr ""))
+  (lib (name STK-600-Huckepack_01-rescue)(type Legacy)(uri ${KIPRJMOD}/STK-600-Huckepack_01-rescue.lib)(options "")(descr ""))
+)
