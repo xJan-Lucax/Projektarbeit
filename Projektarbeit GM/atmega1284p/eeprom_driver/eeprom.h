@@ -38,3 +38,6 @@ void eeprom_driver_read(uint8_t* array_data, uint8_t app_number, uint8_t number_
 void deleteall();
 void deleteall_without_id();
 void deleteall_at_address(uint8_t address);
+
+//debug functions
+void print_variable_from_eeprom(uint8_t app_number, uint8_t number_of_variable);

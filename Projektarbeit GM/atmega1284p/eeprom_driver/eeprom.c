@@ -285,3 +285,18 @@ void eeprom_driver_read(uint8_t* array_data, uint8_t app_number, uint8_t number_
 	  }
 	  uart_put("! EEPROM alles geloescht !\r\n");
   }
+
+  //debug functions
+  void print_variable_from_eeprom(uint8_t app_number, uint8_t number_of_variable){
+	number_of_variable = number_of_variable-1;
+	uint8_t data[array_apps_with_lenght[app_number][number_of_variable]];
+	for(uint8_t i = 0; i < array_apps_with_lenght[app_number][number_of_variable]; i++){
+		
+		data[i] = eeprom_read_byte((const uint8_t*) array_apps_with_addresses[app_number][number_of_variable]+i);
+		}
+		uart_put("Variable: ");
+		for(uint8_t i = 0; i < sizeof(data); i++){
+			uart_putn(data[i]);
+		}
+
+  }

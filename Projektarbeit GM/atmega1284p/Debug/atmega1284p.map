@@ -55,7 +55,7 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_udivmodsi4.o)
                               lora/lorawan-packets/lorawan_packets.o (__udivmodsi4)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_exit.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o (exit)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_tablejump2.o)
                               i2c/i2c_basic.o (__tablejump2__)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_copy_data.o)
@@ -98,9 +98,9 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(vfprintf_std.o) (fputc)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(vfprintf_std.o) (__ultoa_invert)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eerd_byte.o)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
                               eeprom_driver/eeprom.o (eeprom_read_byte)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eeupd_byte.o)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
                               eeprom_driver/eeprom.o (eeprom_update_byte)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_divmodsi4.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(rand.o) (__divmodsi4)
@@ -167,8 +167,8 @@ tmpslave            0x2               spi/spi.o
 
 Discarded input sections
 
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  .text          0x00000000        0x0 display/LCD.o
  .data          0x00000000        0x0 display/LCD.o
  .bss           0x00000000        0x0 display/LCD.o
@@ -199,6 +199,8 @@ Discarded input sections
  .bss           0x00000000        0x0 eeprom_driver/eeprom.o
  .text.deleteall_at_address
                 0x00000000       0x32 eeprom_driver/eeprom.o
+ .text.print_variable_from_eeprom
+                0x00000000      0x100 eeprom_driver/eeprom.o
  .text          0x00000000        0x0 i2c/i2c_basic.o
  .data          0x00000000        0x0 i2c/i2c_basic.o
  .bss           0x00000000        0x0 i2c/i2c_basic.o
@@ -843,12 +845,12 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eerd_byte.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eerd_byte.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eerd_byte.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eeupd_byte.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eeupd_byte.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eeupd_byte.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_divmodsi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_divmodsi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a(_divmodsi4.o)
@@ -907,7 +909,7 @@ user_signatures  0x00850000         0x00000400         rw !x
 Linker script and memory map
 
 Address of section .data set to 0x800100
-LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
 LOAD display/LCD.o
 LOAD display/lcd_lib.o
 LOAD eeprom_driver/eeprom.o
@@ -942,7 +944,7 @@ START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr51\libgcc.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libm.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a
-LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a
 END GROUP
                 0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
                 [0x00800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800100
@@ -1046,7 +1048,7 @@ END GROUP
 
 .text           0x00000000     0x4d04
  *(.vectors)
- .vectors       0x00000000       0x8c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .vectors       0x00000000       0x8c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
@@ -1078,13 +1080,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000014e        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .init0         0x0000014e        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
                 0x0000014e                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000014e        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .init2         0x0000014e        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -1103,10 +1105,10 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000184        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .init9         0x00000184        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  *(.init9)
  *(.text)
- .text          0x0000018c        0x2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .text          0x0000018c        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
                 0x0000018c                __vector_22
                 0x0000018c                __vector_28
                 0x0000018c                __vector_34
@@ -1562,10 +1564,10 @@ END GROUP
                 0x00004bcc       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
                 0x00004bcc                __ultoa_invert
  .text.avr-libc
-                0x00004c88       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eerd_byte.o)
+                0x00004c88       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
                 0x00004c88                eeprom_read_byte
  .text.avr-libc
-                0x00004c98       0x24 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libatmega1284p.a(eeupd_byte.o)
+                0x00004c98       0x24 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
                 0x00004c98                eeprom_update_byte
                 0x00004c9a                eeprom_update_r18
  .text.libgcc.div
@@ -1605,7 +1607,7 @@ END GROUP
  *(.fini0)
                 0x00004d04                _etext = .
 
-.data           0x00800100      0x410 load address 0x00004d04
+.data           0x00800100      0x41a load address 0x00004d04
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(malloc.o)
@@ -1653,146 +1655,145 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x008001be      0x114 eeprom_driver/eeprom.o
-                                0x128 (size before relaxing)
+                0x008001be      0x11f eeprom_driver/eeprom.o
+                                0x133 (size before relaxing)
  .rodata.str1.1
-                0x008002d2       0x16 lora/lorawan-packets/lorawan_packets.o
+                0x008002dd       0x16 lora/lorawan-packets/lorawan_packets.o
  .rodata.str1.1
-                0x008002e8      0x103 lora/lorawan.o
+                0x008002f3      0x103 lora/lorawan.o
                                 0x107 (size before relaxing)
  .rodata.str1.1
-                0x008003eb       0x4b main.o
+                0x008003f6       0x4b main.o
  .rodata.str1.1
-                0x00800436       0xd9 spi/spi_error_handler.o
+                0x00800441       0xd9 spi/spi_error_handler.o
  .rodata.str1.1
-                0x0080050f        0x3 uart.o
+                0x0080051a        0x3 uart.o
  *(.gnu.linkonce.r*)
-                0x00800512                . = ALIGN (0x2)
- *fill*         0x0080050f        0x1 
-                0x00800510                _edata = .
-                0x00800510                PROVIDE (__data_end, .)
+                0x0080051e                . = ALIGN (0x2)
+                0x0080051e                _edata = .
+                0x0080051e                PROVIDE (__data_end, .)
 
-.bss            0x00800510      0x481
-                0x00800510                PROVIDE (__bss_start, .)
+.bss            0x0080051a      0x481
+                0x0080051a                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.apps_found
-                0x00800510        0x1 eeprom_driver/eeprom.o
-                0x00800510                apps_found
+                0x0080051a        0x1 eeprom_driver/eeprom.o
+                0x0080051a                apps_found
  .bss.apps_registered
-                0x00800511        0x1 eeprom_driver/eeprom.o
-                0x00800511                apps_registered
+                0x0080051b        0x1 eeprom_driver/eeprom.o
+                0x0080051b                apps_registered
  .bss.transmit_in_progress
-                0x00800512        0x1 i2c/i2c_basic.o
+                0x0080051c        0x1 i2c/i2c_basic.o
  .bss.Slave_Address
-                0x00800513        0x1 i2c/i2c_basic.o
+                0x0080051d        0x1 i2c/i2c_basic.o
  .bss.lorawan_channel
-                0x00800514        0x1 lora/lorawan.o
-                0x00800514                lorawan_channel
- .bss.LORAWAN_NWKSKWY_FF
-                0x00800515        0x1 lora/lorawan.o
-                0x00800515                LORAWAN_NWKSKWY_FF
- .bss.LORAWAN_TIMEOUT_CONNECTION
-                0x00800516        0x1 lora/lorawan.o
-                0x00800516                LORAWAN_TIMEOUT_CONNECTION
- .bss.LORAWAN_FREQUENCY
-                0x00800517        0x4 lora/lorawan.o
-                0x00800517                LORAWAN_FREQUENCY
- .bss.received_data_length
-                0x0080051b        0x1 lora/lorawan.o
-                0x0080051b                received_data_length
- .bss.received_data
-                0x0080051c        0x2 lora/lorawan.o
-                0x0080051c                received_data
- .bss.antenna_state
                 0x0080051e        0x1 lora/lorawan.o
-                0x0080051e                antenna_state
- .bss.callback  0x0080051f        0x2 lora/lorawan.o
-                0x0080051f                callback
+                0x0080051e                lorawan_channel
+ .bss.LORAWAN_NWKSKWY_FF
+                0x0080051f        0x1 lora/lorawan.o
+                0x0080051f                LORAWAN_NWKSKWY_FF
+ .bss.LORAWAN_TIMEOUT_CONNECTION
+                0x00800520        0x1 lora/lorawan.o
+                0x00800520                LORAWAN_TIMEOUT_CONNECTION
+ .bss.LORAWAN_FREQUENCY
+                0x00800521        0x4 lora/lorawan.o
+                0x00800521                LORAWAN_FREQUENCY
+ .bss.received_data_length
+                0x00800525        0x1 lora/lorawan.o
+                0x00800525                received_data_length
+ .bss.received_data
+                0x00800526        0x2 lora/lorawan.o
+                0x00800526                received_data
+ .bss.antenna_state
+                0x00800528        0x1 lora/lorawan.o
+                0x00800528                antenna_state
+ .bss.callback  0x00800529        0x2 lora/lorawan.o
+                0x00800529                callback
  .bss.app_number
-                0x00800521        0x1 lora/lorawan.o
-                0x00800521                app_number
+                0x0080052b        0x1 lora/lorawan.o
+                0x0080052b                app_number
  .bss.spi_dummy
-                0x00800522        0x1 lora/rfm95.o
+                0x0080052c        0x1 lora/rfm95.o
  .bss.data_sent
-                0x00800523        0x2 lora/rfm95.o
- .bss.my_slave  0x00800525        0x3 lora/rfm95.o
+                0x0080052d        0x2 lora/rfm95.o
+ .bss.my_slave  0x0080052f        0x3 lora/rfm95.o
  .bss.packet_received_callback
-                0x00800528        0x2 lora/rfm95.o
-                0x00800528                packet_received_callback
+                0x00800532        0x2 lora/rfm95.o
+                0x00800532                packet_received_callback
  .bss.packet_sent_callback
-                0x0080052a        0x2 lora/rfm95.o
-                0x0080052a                packet_sent_callback
- .bss.state     0x0080052c        0x2 main.o
-                0x0080052c                state
+                0x00800534        0x2 lora/rfm95.o
+                0x00800534                packet_sent_callback
+ .bss.state     0x00800536        0x2 main.o
+                0x00800536                state
  .bss.data_callback
-                0x0080052e        0x2 spi/spi.o
-                0x0080052e                data_callback
+                0x00800538        0x2 spi/spi.o
+                0x00800538                data_callback
  .bss.task_finished_callback
-                0x00800530        0x2 spi/spi.o
-                0x00800530                task_finished_callback
+                0x0080053a        0x2 spi/spi.o
+                0x0080053a                task_finished_callback
  .bss.data_packet
-                0x00800532        0x2 spi/spi.o
- .bss.slave     0x00800534        0x3 spi/spi.o
+                0x0080053c        0x2 spi/spi.o
+ .bss.slave     0x0080053e        0x3 spi/spi.o
  .bss.SPI_STATE
-                0x00800537        0x1 spi/spi.o
+                0x00800541        0x1 spi/spi.o
  .bss.rx_buffer
-                0x00800538       0x43 spi/spi.o
+                0x00800542       0x43 spi/spi.o
  .bss.tx_buffer
-                0x0080057b      0x283 spi/spi.o
+                0x00800585      0x283 spi/spi.o
  .bss.callback_b_temp
-                0x008007fe        0x2 timer/timer16.o
-                0x008007fe                callback_b_temp
+                0x00800808        0x2 timer/timer16.o
+                0x00800808                callback_b_temp
  .bss.callback_a_temp
-                0x00800800        0x2 timer/timer16.o
-                0x00800800                callback_a_temp
+                0x0080080a        0x2 timer/timer16.o
+                0x0080080a                callback_a_temp
  *(COMMON)
- COMMON         0x00800802        0xc display/LCD.o
-                0x00800802                LcdDDR
-                0x00800804                LineLength
-                0x00800805                CurrentLine
-                0x00800806                LcdPin
-                0x00800808                LineList
-                0x0080080a                LineCount
-                0x0080080b                ErrorActive
-                0x0080080c                LcdPort
- COMMON         0x0080080e      0x15a eeprom_driver/eeprom.o
-                0x0080080e                array_apps_with_lenght
-                0x008008ae                IRCompBFlag
-                0x008008b0                ClockSignal
-                0x008008b1                InitFlag
-                0x008008b2                apps_address
-                0x008008bc                array_apps_with_addresses
-                0x0080095c                apps_in_memory_space
-                0x00800966                IRCompAFlag
- COMMON         0x00800968       0x1b i2c/i2c_basic.o
-                0x00800968                numberOfReadBytes
-                0x00800969                callback_R
-                0x0080096b                I2C_msgSize
-                0x0080096c                I2C_buf
-                0x00800981                delay_time
-                0x00800982                I2C_bufPtr
- COMMON         0x00800983        0x4 lora/lorawan.o
-                0x00800983                freq
- COMMON         0x00800987        0x6 spi/spi.o
-                0x00800987                tmp
-                0x00800988                dump
-                0x00800989                tmptail
-                0x0080098a                tmphead
-                0x0080098b                tmpslave
- COMMON         0x0080098d        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(malloc.o)
-                0x0080098d                __brkval
-                0x0080098f                __flp
-                0x00800991                PROVIDE (__bss_end, .)
+ COMMON         0x0080080c        0xc display/LCD.o
+                0x0080080c                LcdDDR
+                0x0080080e                LineLength
+                0x0080080f                CurrentLine
+                0x00800810                LcdPin
+                0x00800812                LineList
+                0x00800814                LineCount
+                0x00800815                ErrorActive
+                0x00800816                LcdPort
+ COMMON         0x00800818      0x15a eeprom_driver/eeprom.o
+                0x00800818                array_apps_with_lenght
+                0x008008b8                IRCompBFlag
+                0x008008ba                ClockSignal
+                0x008008bb                InitFlag
+                0x008008bc                apps_address
+                0x008008c6                array_apps_with_addresses
+                0x00800966                apps_in_memory_space
+                0x00800970                IRCompAFlag
+ COMMON         0x00800972       0x1b i2c/i2c_basic.o
+                0x00800972                numberOfReadBytes
+                0x00800973                callback_R
+                0x00800975                I2C_msgSize
+                0x00800976                I2C_buf
+                0x0080098b                delay_time
+                0x0080098c                I2C_bufPtr
+ COMMON         0x0080098d        0x4 lora/lorawan.o
+                0x0080098d                freq
+ COMMON         0x00800991        0x6 spi/spi.o
+                0x00800991                tmp
+                0x00800992                dump
+                0x00800993                tmptail
+                0x00800994                tmphead
+                0x00800995                tmpslave
+ COMMON         0x00800997        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x00800997                __brkval
+                0x00800999                __flp
+                0x0080099b                PROVIDE (__bss_end, .)
                 0x00004d04                __data_load_start = LOADADDR (.data)
-                0x00005114                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000511e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800991        0x0
+.noinit         0x0080099b        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800991                _end = .
-                0x00800991                PROVIDE (__heap_start, .)
+                0x0080099b                _end = .
+                0x0080099b                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1862,7 +1863,7 @@ END GROUP
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
  .note.gnu.avr.deviceinfo
-                0x00000000       0x40 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -1879,195 +1880,205 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x620
+.debug_aranges  0x00000000      0x668
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x68 display/LCD.o
  .debug_aranges
-                0x00000068       0x90 eeprom_driver/eeprom.o
+                0x00000068       0x98 eeprom_driver/eeprom.o
  .debug_aranges
-                0x000000f8       0x50 i2c/i2c_basic.o
+                0x00000100       0x50 i2c/i2c_basic.o
  .debug_aranges
-                0x00000148       0x40 led_lib.o
+                0x00000150       0x40 led_lib.o
  .debug_aranges
-                0x00000188       0x68 lora/lorawan-packets/crypto/aes.o
+                0x00000190       0x68 lora/lorawan-packets/crypto/aes.o
  .debug_aranges
-                0x000001f0       0x38 lora/lorawan-packets/crypto/cmac.o
+                0x000001f8       0x38 lora/lorawan-packets/crypto/cmac.o
  .debug_aranges
-                0x00000228       0x50 lora/lorawan-packets/crypto/lorawan_crypto.o
+                0x00000230       0x50 lora/lorawan-packets/crypto/lorawan_crypto.o
  .debug_aranges
-                0x00000278       0x68 lora/lorawan-packets/lorawan_packets.o
+                0x00000280       0x68 lora/lorawan-packets/lorawan_packets.o
  .debug_aranges
-                0x000002e0       0x30 lora/lorawan-packets/utils.o
+                0x000002e8       0x30 lora/lorawan-packets/utils.o
  .debug_aranges
-                0x00000310       0xa0 lora/lorawan.o
+                0x00000318       0xa0 lora/lorawan.o
  .debug_aranges
-                0x000003b0       0x60 lora/rfm95.o
+                0x000003b8       0x60 lora/rfm95.o
  .debug_aranges
-                0x00000410       0x28 main.o
+                0x00000418       0x28 main.o
  .debug_aranges
-                0x00000438       0x50 outputs.o
+                0x00000440       0x50 outputs.o
  .debug_aranges
-                0x00000488       0x28 spi/spi_buffer.o
+                0x00000490       0x28 spi/spi_buffer.o
  .debug_aranges
-                0x000004b0       0x30 spi/spi_error_handler.o
+                0x000004b8       0x30 spi/spi_error_handler.o
  .debug_aranges
-                0x000004e0       0x78 spi/spi.o
+                0x000004e8       0x78 spi/spi.o
  .debug_aranges
-                0x00000558       0x88 timer/timer16.o
+                0x00000560       0x88 timer/timer16.o
  .debug_aranges
-                0x000005e0       0x40 uart.o
+                0x000005e8       0x40 uart.o
+ .debug_aranges
+                0x00000628       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .debug_aranges
+                0x00000648       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x9a4e
+.debug_info     0x00000000     0x9c48
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x792 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .debug_info    0x00000000      0x792 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  .debug_info    0x00000792      0x89d display/LCD.o
- .debug_info    0x0000102f      0x9b7 eeprom_driver/eeprom.o
- .debug_info    0x000019e6      0x429 i2c/i2c_basic.o
- .debug_info    0x00001e0f      0x18f led_lib.o
- .debug_info    0x00001f9e      0x9aa lora/lorawan-packets/crypto/aes.o
- .debug_info    0x00002948      0x49a lora/lorawan-packets/crypto/cmac.o
- .debug_info    0x00002de2      0xa84 lora/lorawan-packets/crypto/lorawan_crypto.o
- .debug_info    0x00003866      0xc27 lora/lorawan-packets/lorawan_packets.o
- .debug_info    0x0000448d      0x154 lora/lorawan-packets/utils.o
- .debug_info    0x000045e1     0x1e3c lora/lorawan.o
- .debug_info    0x0000641d      0x97f lora/rfm95.o
- .debug_info    0x00006d9c      0x9c6 main.o
- .debug_info    0x00007762      0x7d0 outputs.o
- .debug_info    0x00007f32      0x43d spi/spi_buffer.o
- .debug_info    0x0000836f      0x344 spi/spi_error_handler.o
- .debug_info    0x000086b3      0xb30 spi/spi.o
- .debug_info    0x000091e3      0x510 timer/timer16.o
- .debug_info    0x000096f3      0x35b uart.o
+ .debug_info    0x0000102f      0xa78 eeprom_driver/eeprom.o
+ .debug_info    0x00001aa7      0x429 i2c/i2c_basic.o
+ .debug_info    0x00001ed0      0x18f led_lib.o
+ .debug_info    0x0000205f      0x9aa lora/lorawan-packets/crypto/aes.o
+ .debug_info    0x00002a09      0x49a lora/lorawan-packets/crypto/cmac.o
+ .debug_info    0x00002ea3      0xa84 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_info    0x00003927      0xc27 lora/lorawan-packets/lorawan_packets.o
+ .debug_info    0x0000454e      0x154 lora/lorawan-packets/utils.o
+ .debug_info    0x000046a2     0x1e3c lora/lorawan.o
+ .debug_info    0x000064de      0x97f lora/rfm95.o
+ .debug_info    0x00006e5d      0x9c6 main.o
+ .debug_info    0x00007823      0x7d0 outputs.o
+ .debug_info    0x00007ff3      0x43d spi/spi_buffer.o
+ .debug_info    0x00008430      0x344 spi/spi_error_handler.o
+ .debug_info    0x00008774      0xb30 spi/spi.o
+ .debug_info    0x000092a4      0x510 timer/timer16.o
+ .debug_info    0x000097b4      0x35b uart.o
+ .debug_info    0x00009b0f       0x9c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .debug_info    0x00009bab       0x9d C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
 
-.debug_abbrev   0x00000000     0x2c2f
+.debug_abbrev   0x00000000     0x2c81
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x729 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .debug_abbrev  0x00000000      0x729 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  .debug_abbrev  0x00000729      0x266 display/LCD.o
- .debug_abbrev  0x0000098f      0x271 eeprom_driver/eeprom.o
- .debug_abbrev  0x00000c00      0x220 i2c/i2c_basic.o
- .debug_abbrev  0x00000e20       0xc5 led_lib.o
- .debug_abbrev  0x00000ee5      0x206 lora/lorawan-packets/crypto/aes.o
- .debug_abbrev  0x000010eb      0x179 lora/lorawan-packets/crypto/cmac.o
- .debug_abbrev  0x00001264      0x1d7 lora/lorawan-packets/crypto/lorawan_crypto.o
- .debug_abbrev  0x0000143b      0x1f1 lora/lorawan-packets/lorawan_packets.o
- .debug_abbrev  0x0000162c       0xc6 lora/lorawan-packets/utils.o
- .debug_abbrev  0x000016f2      0x445 lora/lorawan.o
- .debug_abbrev  0x00001b37      0x297 lora/rfm95.o
- .debug_abbrev  0x00001dce      0x28b main.o
- .debug_abbrev  0x00002059      0x1ad outputs.o
- .debug_abbrev  0x00002206      0x1c7 spi/spi_buffer.o
- .debug_abbrev  0x000023cd      0x1ed spi/spi_error_handler.o
- .debug_abbrev  0x000025ba      0x2e9 spi/spi.o
- .debug_abbrev  0x000028a3      0x1a6 timer/timer16.o
- .debug_abbrev  0x00002a49      0x1e6 uart.o
+ .debug_abbrev  0x0000098f      0x29b eeprom_driver/eeprom.o
+ .debug_abbrev  0x00000c2a      0x220 i2c/i2c_basic.o
+ .debug_abbrev  0x00000e4a       0xc5 led_lib.o
+ .debug_abbrev  0x00000f0f      0x206 lora/lorawan-packets/crypto/aes.o
+ .debug_abbrev  0x00001115      0x179 lora/lorawan-packets/crypto/cmac.o
+ .debug_abbrev  0x0000128e      0x1d7 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_abbrev  0x00001465      0x1f1 lora/lorawan-packets/lorawan_packets.o
+ .debug_abbrev  0x00001656       0xc6 lora/lorawan-packets/utils.o
+ .debug_abbrev  0x0000171c      0x445 lora/lorawan.o
+ .debug_abbrev  0x00001b61      0x297 lora/rfm95.o
+ .debug_abbrev  0x00001df8      0x28b main.o
+ .debug_abbrev  0x00002083      0x1ad outputs.o
+ .debug_abbrev  0x00002230      0x1c7 spi/spi_buffer.o
+ .debug_abbrev  0x000023f7      0x1ed spi/spi_error_handler.o
+ .debug_abbrev  0x000025e4      0x2e9 spi/spi.o
+ .debug_abbrev  0x000028cd      0x1a6 timer/timer16.o
+ .debug_abbrev  0x00002a73      0x1e6 uart.o
+ .debug_abbrev  0x00002c59       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .debug_abbrev  0x00002c6d       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
 
-.debug_line     0x00000000     0x4432
+.debug_line     0x00000000     0x472d
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
- .debug_line    0x0000001a      0x493 display/LCD.o
- .debug_line    0x000004ad      0x526 eeprom_driver/eeprom.o
- .debug_line    0x000009d3      0x3db i2c/i2c_basic.o
- .debug_line    0x00000dae      0x14a led_lib.o
- .debug_line    0x00000ef8      0x49f lora/lorawan-packets/crypto/aes.o
- .debug_line    0x00001397      0x2d5 lora/lorawan-packets/crypto/cmac.o
- .debug_line    0x0000166c      0x3a4 lora/lorawan-packets/crypto/lorawan_crypto.o
- .debug_line    0x00001a10      0x5f1 lora/lorawan-packets/lorawan_packets.o
- .debug_line    0x00002001      0x115 lora/lorawan-packets/utils.o
- .debug_line    0x00002116      0xa66 lora/lorawan.o
- .debug_line    0x00002b7c      0x3a1 lora/rfm95.o
- .debug_line    0x00002f1d      0x29b main.o
- .debug_line    0x000031b8      0x30c outputs.o
- .debug_line    0x000034c4      0x25c spi/spi_buffer.o
- .debug_line    0x00003720      0x22d spi/spi_error_handler.o
- .debug_line    0x0000394d      0x5af spi/spi.o
- .debug_line    0x00003efc      0x364 timer/timer16.o
- .debug_line    0x00004260      0x1d2 uart.o
+ .debug_line    0x00000000      0x16a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
+ .debug_line    0x0000016a      0x493 display/LCD.o
+ .debug_line    0x000005fd      0x5a1 eeprom_driver/eeprom.o
+ .debug_line    0x00000b9e      0x3db i2c/i2c_basic.o
+ .debug_line    0x00000f79      0x14a led_lib.o
+ .debug_line    0x000010c3      0x49f lora/lorawan-packets/crypto/aes.o
+ .debug_line    0x00001562      0x2d5 lora/lorawan-packets/crypto/cmac.o
+ .debug_line    0x00001837      0x3a4 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_line    0x00001bdb      0x5f1 lora/lorawan-packets/lorawan_packets.o
+ .debug_line    0x000021cc      0x115 lora/lorawan-packets/utils.o
+ .debug_line    0x000022e1      0xa66 lora/lorawan.o
+ .debug_line    0x00002d47      0x3a1 lora/rfm95.o
+ .debug_line    0x000030e8      0x29b main.o
+ .debug_line    0x00003383      0x30c outputs.o
+ .debug_line    0x0000368f      0x25c spi/spi_buffer.o
+ .debug_line    0x000038eb      0x22d spi/spi_error_handler.o
+ .debug_line    0x00003b18      0x5af spi/spi.o
+ .debug_line    0x000040c7      0x364 timer/timer16.o
+ .debug_line    0x0000442b      0x1d2 uart.o
+ .debug_line    0x000045fd       0x7a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eerd_byte.o)
+ .debug_line    0x00004677       0xb6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51\libatmega1284p.a(eeupd_byte.o)
 
-.debug_frame    0x00000000     0x1648
+.debug_frame    0x00000000     0x16a4
  *(.debug_frame)
  .debug_frame   0x00000000      0x124 display/LCD.o
- .debug_frame   0x00000124      0x1c4 eeprom_driver/eeprom.o
- .debug_frame   0x000002e8      0x144 i2c/i2c_basic.o
- .debug_frame   0x0000042c       0x6c led_lib.o
- .debug_frame   0x00000498      0x1a8 lora/lorawan-packets/crypto/aes.o
- .debug_frame   0x00000640       0xb0 lora/lorawan-packets/crypto/cmac.o
- .debug_frame   0x000006f0      0x214 lora/lorawan-packets/crypto/lorawan_crypto.o
- .debug_frame   0x00000904      0x1fc lora/lorawan-packets/lorawan_packets.o
- .debug_frame   0x00000b00       0x50 lora/lorawan-packets/utils.o
- .debug_frame   0x00000b50      0x214 lora/lorawan.o
- .debug_frame   0x00000d64      0x16c lora/rfm95.o
- .debug_frame   0x00000ed0       0x64 main.o
- .debug_frame   0x00000f34      0x154 outputs.o
- .debug_frame   0x00001088       0x90 spi/spi_buffer.o
- .debug_frame   0x00001118       0x78 spi/spi_error_handler.o
- .debug_frame   0x00001190      0x1d4 spi/spi.o
- .debug_frame   0x00001364      0x250 timer/timer16.o
- .debug_frame   0x000015b4       0x94 uart.o
+ .debug_frame   0x00000124      0x220 eeprom_driver/eeprom.o
+ .debug_frame   0x00000344      0x144 i2c/i2c_basic.o
+ .debug_frame   0x00000488       0x6c led_lib.o
+ .debug_frame   0x000004f4      0x1a8 lora/lorawan-packets/crypto/aes.o
+ .debug_frame   0x0000069c       0xb0 lora/lorawan-packets/crypto/cmac.o
+ .debug_frame   0x0000074c      0x214 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_frame   0x00000960      0x1fc lora/lorawan-packets/lorawan_packets.o
+ .debug_frame   0x00000b5c       0x50 lora/lorawan-packets/utils.o
+ .debug_frame   0x00000bac      0x214 lora/lorawan.o
+ .debug_frame   0x00000dc0      0x16c lora/rfm95.o
+ .debug_frame   0x00000f2c       0x64 main.o
+ .debug_frame   0x00000f90      0x154 outputs.o
+ .debug_frame   0x000010e4       0x90 spi/spi_buffer.o
+ .debug_frame   0x00001174       0x78 spi/spi_error_handler.o
+ .debug_frame   0x000011ec      0x1d4 spi/spi.o
+ .debug_frame   0x000013c0      0x250 timer/timer16.o
+ .debug_frame   0x00001610       0x94 uart.o
 
-.debug_str      0x00000000     0x22d0
+.debug_str      0x00000000     0x233f
  *(.debug_str)
- .debug_str     0x00000000      0x296 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51/crtatmega1284p.o
+ .debug_str     0x00000000      0x296 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega1284p/avr51/crtatmega1284p.o
  .debug_str     0x00000296      0x339 display/LCD.o
                                 0x38e (size before relaxing)
- .debug_str     0x000005cf      0x436 eeprom_driver/eeprom.o
-                                0x5b5 (size before relaxing)
- .debug_str     0x00000a05      0x18d i2c/i2c_basic.o
+ .debug_str     0x000005cf      0x4a5 eeprom_driver/eeprom.o
+                                0x603 (size before relaxing)
+ .debug_str     0x00000a74      0x18d i2c/i2c_basic.o
                                 0x33c (size before relaxing)
- .debug_str     0x00000b92       0x4b led_lib.o
+ .debug_str     0x00000c01       0x4b led_lib.o
                                 0x199 (size before relaxing)
- .debug_str     0x00000bdd       0xb8 lora/lorawan-packets/crypto/aes.o
+ .debug_str     0x00000c4c       0xb8 lora/lorawan-packets/crypto/aes.o
                                 0x212 (size before relaxing)
- .debug_str     0x00000c95       0x8e lora/lorawan-packets/crypto/cmac.o
+ .debug_str     0x00000d04       0x8e lora/lorawan-packets/crypto/cmac.o
                                 0x224 (size before relaxing)
- .debug_str     0x00000d23      0x206 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_str     0x00000d92      0x206 lora/lorawan-packets/crypto/lorawan_crypto.o
                                 0x454 (size before relaxing)
- .debug_str     0x00000f29      0x3b6 lora/lorawan-packets/lorawan_packets.o
+ .debug_str     0x00000f98      0x3b6 lora/lorawan-packets/lorawan_packets.o
                                 0x697 (size before relaxing)
- .debug_str     0x000012df       0x27 lora/lorawan-packets/utils.o
+ .debug_str     0x0000134e       0x27 lora/lorawan-packets/utils.o
                                 0x1cf (size before relaxing)
- .debug_str     0x00001306      0x39f lora/lorawan.o
-                                0xb52 (size before relaxing)
- .debug_str     0x000016a5      0x1f9 lora/rfm95.o
+ .debug_str     0x00001375      0x39f lora/lorawan.o
+                                0xb80 (size before relaxing)
+ .debug_str     0x00001714      0x1f9 lora/rfm95.o
                                 0x5c7 (size before relaxing)
- .debug_str     0x0000189e      0x214 main.o
+ .debug_str     0x0000190d      0x214 main.o
                                 0x73f (size before relaxing)
- .debug_str     0x00001ab2      0x1e3 outputs.o
+ .debug_str     0x00001b21      0x1e3 outputs.o
                                 0x5df (size before relaxing)
- .debug_str     0x00001c95      0x1d7 spi/spi_buffer.o
+ .debug_str     0x00001d04      0x1d7 spi/spi_buffer.o
                                 0x35d (size before relaxing)
- .debug_str     0x00001e6c       0x6e spi/spi_error_handler.o
+ .debug_str     0x00001edb       0x6e spi/spi_error_handler.o
                                 0x2fa (size before relaxing)
- .debug_str     0x00001eda      0x17e spi/spi.o
+ .debug_str     0x00001f49      0x17e spi/spi.o
                                 0x620 (size before relaxing)
- .debug_str     0x00002058      0x235 timer/timer16.o
+ .debug_str     0x000020c7      0x235 timer/timer16.o
                                 0x501 (size before relaxing)
- .debug_str     0x0000228d       0x43 uart.o
+ .debug_str     0x000022fc       0x43 uart.o
                                 0x225 (size before relaxing)
 
-.debug_loc      0x00000000     0x65b7
+.debug_loc      0x00000000     0x67c7
  *(.debug_loc)
  .debug_loc     0x00000000      0x606 display/LCD.o
- .debug_loc     0x00000606      0x7fe eeprom_driver/eeprom.o
- .debug_loc     0x00000e04      0x3f4 i2c/i2c_basic.o
- .debug_loc     0x000011f8       0x4e led_lib.o
- .debug_loc     0x00001246      0x917 lora/lorawan-packets/crypto/aes.o
- .debug_loc     0x00001b5d      0x42c lora/lorawan-packets/crypto/cmac.o
- .debug_loc     0x00001f89      0xca3 lora/lorawan-packets/crypto/lorawan_crypto.o
- .debug_loc     0x00002c2c      0xae9 lora/lorawan-packets/lorawan_packets.o
- .debug_loc     0x00003715      0x11f lora/lorawan-packets/utils.o
- .debug_loc     0x00003834      0xbce lora/lorawan.o
- .debug_loc     0x00004402      0x58a lora/rfm95.o
- .debug_loc     0x0000498c      0x1ce main.o
- .debug_loc     0x00004b5a      0x32f outputs.o
- .debug_loc     0x00004e89      0x486 spi/spi_buffer.o
- .debug_loc     0x0000530f      0x2a4 spi/spi_error_handler.o
- .debug_loc     0x000055b3      0x828 spi/spi.o
- .debug_loc     0x00005ddb      0x614 timer/timer16.o
- .debug_loc     0x000063ef      0x1c8 uart.o
+ .debug_loc     0x00000606      0xa0e eeprom_driver/eeprom.o
+ .debug_loc     0x00001014      0x3f4 i2c/i2c_basic.o
+ .debug_loc     0x00001408       0x4e led_lib.o
+ .debug_loc     0x00001456      0x917 lora/lorawan-packets/crypto/aes.o
+ .debug_loc     0x00001d6d      0x42c lora/lorawan-packets/crypto/cmac.o
+ .debug_loc     0x00002199      0xca3 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_loc     0x00002e3c      0xae9 lora/lorawan-packets/lorawan_packets.o
+ .debug_loc     0x00003925      0x11f lora/lorawan-packets/utils.o
+ .debug_loc     0x00003a44      0xbce lora/lorawan.o
+ .debug_loc     0x00004612      0x58a lora/rfm95.o
+ .debug_loc     0x00004b9c      0x1ce main.o
+ .debug_loc     0x00004d6a      0x32f outputs.o
+ .debug_loc     0x00005099      0x486 spi/spi_buffer.o
+ .debug_loc     0x0000551f      0x2a4 spi/spi_error_handler.o
+ .debug_loc     0x000057c3      0x828 spi/spi.o
+ .debug_loc     0x00005feb      0x614 timer/timer16.o
+ .debug_loc     0x000065ff      0x1c8 uart.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2087,26 +2098,26 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x6a0
+.debug_ranges   0x00000000      0x6a8
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x58 display/LCD.o
- .debug_ranges  0x00000058       0x98 eeprom_driver/eeprom.o
- .debug_ranges  0x000000f0       0x60 i2c/i2c_basic.o
- .debug_ranges  0x00000150       0x30 led_lib.o
- .debug_ranges  0x00000180       0x58 lora/lorawan-packets/crypto/aes.o
- .debug_ranges  0x000001d8       0x88 lora/lorawan-packets/crypto/cmac.o
- .debug_ranges  0x00000260       0x58 lora/lorawan-packets/crypto/lorawan_crypto.o
- .debug_ranges  0x000002b8       0x58 lora/lorawan-packets/lorawan_packets.o
- .debug_ranges  0x00000310       0x20 lora/lorawan-packets/utils.o
- .debug_ranges  0x00000330       0xf0 lora/lorawan.o
- .debug_ranges  0x00000420       0x68 lora/rfm95.o
- .debug_ranges  0x00000488       0x48 main.o
- .debug_ranges  0x000004d0       0x40 outputs.o
- .debug_ranges  0x00000510       0x48 spi/spi_buffer.o
- .debug_ranges  0x00000558       0x38 spi/spi_error_handler.o
- .debug_ranges  0x00000590       0x68 spi/spi.o
- .debug_ranges  0x000005f8       0x78 timer/timer16.o
- .debug_ranges  0x00000670       0x30 uart.o
+ .debug_ranges  0x00000058       0xa0 eeprom_driver/eeprom.o
+ .debug_ranges  0x000000f8       0x60 i2c/i2c_basic.o
+ .debug_ranges  0x00000158       0x30 led_lib.o
+ .debug_ranges  0x00000188       0x58 lora/lorawan-packets/crypto/aes.o
+ .debug_ranges  0x000001e0       0x88 lora/lorawan-packets/crypto/cmac.o
+ .debug_ranges  0x00000268       0x58 lora/lorawan-packets/crypto/lorawan_crypto.o
+ .debug_ranges  0x000002c0       0x58 lora/lorawan-packets/lorawan_packets.o
+ .debug_ranges  0x00000318       0x20 lora/lorawan-packets/utils.o
+ .debug_ranges  0x00000338       0xf0 lora/lorawan.o
+ .debug_ranges  0x00000428       0x68 lora/rfm95.o
+ .debug_ranges  0x00000490       0x48 main.o
+ .debug_ranges  0x000004d8       0x40 outputs.o
+ .debug_ranges  0x00000518       0x48 spi/spi_buffer.o
+ .debug_ranges  0x00000560       0x38 spi/spi_error_handler.o
+ .debug_ranges  0x00000598       0x68 spi/spi.o
+ .debug_ranges  0x00000600       0x78 timer/timer16.o
+ .debug_ranges  0x00000678       0x30 uart.o
 
 .debug_macro
  *(.debug_macro)
